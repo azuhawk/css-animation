@@ -1,12 +1,24 @@
 <!doctype html>
 <html lang=en>
-    <head>
-        <meta charset=utf-8>
-        <link rel="stylesheet" type="text/css" href="css/animation.css">
-        <title>My First animation</title>
-    </head>
 
-    <body>
-        <div></div>
-    </body>
+<head>
+    <meta charset=utf-8>
+    <title>My First animation</title>
+    <link rel="stylesheet" href="CSS Folder/animationLogo.css">
+</head>
+
+<body>
+    <div class="images-container">
+        <img src="Images/images.png" </div>
+
+        <div class="cursor"></div>
+        <script>
+            const cursor = document.querySelector('.cursor');
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.pageX + "px";
+                cursor.style.left = e.pageY + "px"
+            })
+        </script>
+</body>
+
 </html>

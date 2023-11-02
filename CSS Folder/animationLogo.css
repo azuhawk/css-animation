@@ -1,1 +1,29 @@
+div.images-container {
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+    animation-name: animated;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+}
 
+@keyframes animated {
+    0% {
+        background-color: blue;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+        border-radius: 150%;
+        transform: rotate(180deg);
+        transform: translateX(300px);
+        transform: translateY(600px);
+    }
+    div: hover~.cursor {
+        transform: scale(6) pointer-events
+    }
+}
